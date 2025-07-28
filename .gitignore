@@ -1,1 +1,27 @@
-node_modules
+# Node
+# ========== Common ==========
+node_modules/
+.env
+*.log
+.DS_Store
+.vscode/
+.idea/
+
+# ========== Frontend ==========
+/frontend/node_modules/
+/frontend/dist/
+/frontend/.env
+
+# ========== Backend ==========
+/backend/node_modules/
+/backend/.env
+
+# ========== OS Files ==========
+Thumbs.db
+
+# ========== IDE/Editor ==========
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
