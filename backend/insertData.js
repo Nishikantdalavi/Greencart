@@ -1,11 +1,11 @@
 import mongoose from "mongoose";
 import fs from 'fs'
-
-
+import dotenv from 'dotenv';
+dotenv.config();
 
 import Product from "./models/product.js";
 
-const uri = `mongodb+srv://sammysk12:sammysk123@cluster0.fdotfdo.mongodb.net/greencart`;
+const uri =process.env.MONGO_DB_URI ;
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
 
